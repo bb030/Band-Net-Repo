@@ -1,0 +1,18 @@
+{
+  "short_name": "JS Board",
+  "name": "JS Notice Board",
+  "icons": [{
+    "src": "images/favicon.png",
+    "sizes": "64x64",
+    "type": "image/png"
+  }, {
+    "src": "images/icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "start_url": "notice-board.html",
+  "scope": "/",
+  "background_color": "white",
+  "theme_color": "white",
+  "display": "standalone"
+}

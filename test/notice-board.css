@@ -1,0 +1,83 @@
+/* (A) ENTIRE PAGE */
+* {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  margin: 0;
+  background: url(images/cork.jpg);
+}
+
+/* (B) ADD NEW NOTE */
+#noteform {
+  display: flex;
+  margin-bottom: 20px;
+}
+#notetxt { flex-grow: 1; }
+#notetxt, #notego { border: 0; }
+#notetxt { padding: 10px; }
+#notego {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background: #0e5ce9;
+}
+
+/* (C) NOTICE BOARD WRAPPER */
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* (D) NOTES */
+div.note {
+  position: relative;
+  padding: 15px;
+  border: 2px solid #fdff8a;
+  background: #fdff8a;
+  box-shadow: 9px 11px 11px -2px rgba(0,0,0,0.4);
+}
+
+/* (E) DELETE BUTTON */
+div.note .del {
+  position: absolute;
+  top: 5px; right: 5px;
+  color: #ff5a5a;
+  font-size: 20px;
+  font-weight: 700;
+  display: none;
+}
+div.note:hover .del { display: block; }
+
+/* (F) EDIT NOTE */
+div.note .txt input {
+  padding: 5px;
+  border: 0;
+  background: #fff;
+}
+div.note .txt input:focus { outline-width: 0; }
+
+/* (G) LOCK DRAG & DELETE WHEN EDITING */
+#board div.lock {
+  pointer-events: none;
+  color: #818181;
+  border: 1px solid #d3d3d3;
+  background: #d3d3d3;
+}
+#board div.lock .del { display: none; }
+
+/* (H) PREVENT DRAG LEAVE EVENT ON NOTE CHILD ELEMENTS */
+#board div.drag .txt, #board div.drag .del { pointer-events: none; }
+#board div.drag .del { display: none; }
+
+/* (I) DRAG HIGHLIGHT */
+#board div.hint {
+  border: 2px dashed #ff8e68;
+  background: #feffc5;
+}
+#board div.active {
+  border: 2px dashed #ff0000;
+  background: #fcff00;
+}
