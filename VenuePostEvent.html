@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Post Venue Event</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <h1 style="text-align:center">Post Event</h1>
+  <style>ul {list-style-type: none;}
+    body {font-family: Verdana, sans-serif;}
+    
+    /* Month header */
+    .month {
+      padding: 70px 25px;
+      width: 100%;
+      background: #1abc9c;
+      text-align: center;
+    }
+    
+    /* Month list */
+    .month ul {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .month ul li {
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    /* Previous button inside month header */
+    .month .prev {
+      float: left;
+      padding-top: 10px;
+    }
+    
+    /* Next button */
+    .month .next {
+      float: right;
+      padding-top: 10px;
+    }
+    
+    /* Weekdays (Mon-Sun) */
+    .weekdays {
+      margin: 0;
+      padding: 10px 0;
+      background-color:#ddd;
+    }
+    
+    .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      color: #666;
+      text-align: center;
+    }
+    
+    /* Days (1-31) */
+    .days {
+      padding: 10px 0;
+      background: #eee;
+      margin: 0;
+    }
+    
+    .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size:12px;
+      color: #777;
+    }
+    
+    /* Highlight the "current" day */
+    .days li .active {
+      padding: 5px;
+      background: #1abc9c;
+      color: white !important
+    }</style>
+
+  <body>
+    <div class="container">
+        <form action="action_page.php">
+          <div class="row">
+            <div class="col-25">
+              <label for="ename">Event Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="ename" name="eventname" placeholder="Your event name..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="state">State</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="state" name="state" placeholder="State..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="city">City</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="city" name="city" placeholder="City..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="address">Address</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="address" name="address" placeholder="Address..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="date">Dates</label>
+            </div>
+            <div class="col-75">
+                
+                <div class="month">
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>November<br><span style="font-size:18px">2022</span></li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+                  
+                  <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li><span class="active">4</span></li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                  </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="openings">Openings</label>
+            </div>
+            <div class="col-75">
+              <select id="openings" name="openings">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+                <label for="cinfo">Contact Information</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="cinfo" name="contactinfo" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div> <br>
+    <h2>Pages</h2>
+    <a href="https://bb030.github.io/Band-Net-Repo/VenuePage.html">Venue Page</a> <br>
+    This is the current date and time:
+    <py-script>
+      from datetime import datetime
+      now = datetime.now()
+      now.strftime("%m/%d/%Y, %H:%M:%S")
+    </py-script>
+  </body>
+</html>
