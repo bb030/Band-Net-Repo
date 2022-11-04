@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <title>Hello ISYS5423 Students!</title>
+    <title>BandPage Message box</title>
 
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
@@ -13,13 +13,39 @@
   </head>
 
   <body>
-    This is a place holder for a Band to send message to other Bands <br>
+    
+    <div class="container">
+      <form action="action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="to">To</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="to" name="To" placeholder="the Receiver Name or email address..">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Start a new message.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="Send" value="Send">
+        </div>
+
+        <div class="clearfix">
+          <button type="button" class="Messagebtn">Message</button>
+        </div>
+      </div>
+      </form>
     <h2>Pages</h2>
-
-    <a href="https://bb030.github.io/Band-Net-Repo/Index.html"<a>>HomePage<br>
-
-      Do you want to send a message to other user? Please go to <br>
-      Messages <br>
+    <a href="https://bb030.github.io/Band-Net-Repo/Index.html">HomePage</a> <br>
+    <a href="https://bb030.github.io/Band-Net-Repo/BandPage.html">Compose</a> <br>
+    
     This is the current date and time:
     <py-script>
       from datetime import datetime
