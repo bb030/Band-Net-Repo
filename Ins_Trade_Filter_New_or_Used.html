@@ -1,33 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<form action="action_page.php">
+  <div class="container">
+    <h1>Instrument Trader - Filter Instruments </h1>
+    <p>Please Filter the Instruments you are looking for...</p>
+    <hr>
 
-    <title>Hello ISYS5423 Students!</title>
 
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  </head>
-
-  <body>
+<!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Select Instrument Type:</option>
+    <option value="1">Guitars</option>
+    <option value="2">Basses</option>
+    <option value="3">Drums</option>
+    <option value="4">Keyboards or Pianos</option>
+    <option value="5">Cymbals</option>
+    <option value="6">Live Sound</option>
+    <option value="7">Brass Wind</option>
+    <option value="8">Wood Wind</option>
+    <option value="9">Recording</option>
+    <option value="10">Others</option>
+  </select>
   
+  <hr>
   
-    This is a place holder for an Instrument Trader to post an Instrument for Sale or Trade <br>
-    This page belongs to User Story 4. Instrument Trader - Filter New or Used Instruments <br>
-    <h2>Pages</h2>
-
-    <a href="https://bb030.github.io/Band-Net-Repo/Index.html"<a>>HomePage<br>
-    
-    List of all Instruments For Sale or Trade <br>
-    Instrument 1 <br>
-    Instrument 2 <br>
-    Instrument 3 <br>
-    
-    Show Two Buttons "New"  "Used" <br>
-    
-    
-  </body>
-</html>
+  <hr>
+  
+  <!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Condition:</option>
+    <option value="1">New</option>
+    <option value="2">Old</option>
+  </select>
+  
+</div>

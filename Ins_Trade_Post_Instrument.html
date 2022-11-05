@@ -1,34 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<form action="action_page.php">
+  <div class="container">
+    <h1>Instrument Trader - Post an Instrument for Sale or Trade </h1>
+    <p>Please fill in this form Post an Instrument for Sale or Trade.</p>
+    <hr>
 
-    <title>Hello ISYS5423 Students!</title>
+	
+	<label for="Type of Instrument"><b>Type of Instrument</b></label>
+	<input type="text" placeholder="Instrument (eg: Guitar)" name="Type of Instrument" id="Type of Instrument" required>
+	<label for="Instrument Description"><b>Instrument Description</b></label>
+	<input type="text" placeholder="Instrument Description" name="Instrument Description" id="Instrument Description" required>
+	
+	<hr>
+	<hr>
+	<hr>
+	
+	
+    <label for="Instrument Condition"><b>Instrument Condition</b></label>
+    <input type="text" placeholder="Instrument Condition" name="Instrument Condition" id="Instrument Condition" required>
 
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <label for="Price"><b>Price</b></label>
+    <input type="Price" placeholder="Price" name="Price" id="Price" required>
 
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  </head>
+   
+    <hr>
+    <hr>
 
-  <body>
-  
-  
-    This is a place holder for an Instrument Trader to post an Instrument for Sale or Trade <br>
-    This page belongs to User Story 2. Instrument Trader - Post Instruments for Trade or Sale <br>
-    <h2>Pages</h2>
+	
+	<p> Insert up to 4 pictures of your Instrument <p>
+	<button type="submit" class"pictures">Browse<button>
+</div>
 
-    <a href="https://bb030.github.io/Band-Net-Repo/Index.html"<a>>HomePage<br>
-    
-    Please enter the following information <br>
-    Title of your Ad - Capture a brief title of your posting <br>
-    Type of instrument - A drop down menu shows all the different type of instruments like guitars, drums, keyboards, etc <br>
-    Description of the instrument - Open space to type a brief description of the instrument and condition <br>
-    Instrument Condition - Capture if it is New or Used <br>
-    Price - Capture the price you are expecting to receive <br>
-    
-      Show a Submit button <br>
-    
-  </body>
-</html>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Post Instrument</button>
+  </div>
+
+  <div class="container signin">
+    <p>Back to Home? <a href="#">HOME</a>.</p>
+  </div>
+</form>
