@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- jQuery -->
+    <script type="text/javascript" 
+        src="https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+  
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href=
+"https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+  
+    <!-- DataTables JS -->
+    <script src=
+"https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js">
+    </script>
+</head>
+  
+<body>
+   <i class="material-icons">add_location</i>
+   <input type="text" placeholder="location..">
+    <h1 style="color: red;">
+        BandNet
+    </h1>
+  
+    <!--HTML table with student data-->
+    <table id="tableID" class="display">
+        <thead>
+            <tr>
+                <th>Keyword or Name</th>
+                <th>Location</th>
+                <th>Contact</th>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+  
+        // Initialize the DataTable
+        $(document).ready(function () {
+            $('#tableID').DataTable({
+  
+                // Enable the searching
+                // of the DataTable
+                searching: true
+            });
+        });
+    </script>
+    <h2>Pages</h2>
+<a href="https://bb030.github.io/Band-Net-Repo/SearchTab.html">Search</a> <br>
+    This is the current date and time:
+    <py-script>
+      from datetime import datetime
+      now = datetime.now()
+      now.strftime("%m/%d/%Y, %H:%M:%S")
+    </py-script>
+  </body>
+</html>
