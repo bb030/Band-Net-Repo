@@ -1,37 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!--
-  homepage address
-  http://127.0.0.1:5500/HomePage.html
--->
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
 
-    <title>Band-Net Dev Repository Place Holder</title>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="https://bb030.github.io/Band-Net-Repo/Index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/MusicianPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Musicians</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/BandPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bands</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/VenuePage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Venues</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/Ins_trade_user_story_1.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Instrument Trading</a>
+    <a href="Test_Who.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Who are we?</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/test/notice-board.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Talk to other Musicians</a>
+  </div>
 
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
 
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  </head>
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">MUSIC-NET</h1>
+  <p class="w3-xlarge">by TALDGWENBRY LLC</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">WELCOME</button>
+</header>
 
-  <body>
-    <h2>Hello Team! This is a Landing Page Place Holder</h2><br>
-  <a href="https://bb030.github.io/Band-Net-Repo/LoginPage.html">Login</a>
-    <h2>Pages</h2>
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>What is Music-Net?<h1>
+      <h5 class="w3-padding-32">Band-Net is a on-line social network that connects the different participants in the music industry. Whether you are a musician trying to form a band or participate on an existing one, a band looking to add a musician or a venue looking for a forum to promote your event, Ban-Net is for the different entities in the music industry looking for a connection to create, participate or even trade. Band-Net defines the network in four kind of users: Musicians, Bands, Venues and Instrument traders.
+The Company aims to develop a website that will connect different instruments (melomaniacs) and Music (Melophile) lovers with the objective to facilitate the development of bands, the sharing of music, and the trading of instruments. Further, the website will allow people to sign up, add contact information, instruments for sales, Musical events, and Time availability to collaborate with others.</h5>
 
+      <p class="w3-text-grey">This project will include the following:
+• Documentation that tracks the completion of each sprint
+• A roadmap showing the progression of the goals achievement
+• A test plan to ensure the functionality of all the features
+• deliverables such as a website with a home page, an Instrument archive, etc. where musicians, bands, instrument traders, and other users will interact.
 
-<a href="https://bb030.github.io/Band-Net-Repo/MusicianPage.html">Musician Page</a>
-<a href="https://bb030.github.io/Band-Net-Repo/BandPage.html">Band Page</a>
-<a href="https://bb030.github.io/Band-Net-Repo/VenuePage.html">Venue Page</a>
-<a href="https://bb030.github.io/Band-Net-Repo/Ins_trade_user_story_1.html">Trading Page</a>
-<a href="https://bb030.github.io/Band-Net-Repo/test/notice-board.html">Talk to other Musicians</a>
-    <py-script>
-      from datetime import datetime
-      now = datetime.now()
-      now.strftime("%m/%d/%Y, %H:%M:%S")
-    </py-script>
-  </body>
+Our scope does not currently cover
+
+Transactional purchases</p>
+    </div>
+
+    <div class="w3-third w3-center">
+     <i>
+     <img src="Music-Net_Logo.png" alt="Trulli" width="300" height="200" style=float:right
+<br> <i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Abstract</h1>
+      <h5 class="w3-padding-32">Music is a big industry with an estimated value in $20 billion and in the latest years have been growing enabled by technology (streaming, advanced equipment, internet, mobile applications, etc). According to woodwindgeek.com , 74% of adults in the US have played a musical instrument. These two facts are an inspiration to believe that there is a huge opportunity on helping all participants in the music industry to connect and add value through networking.</h5>
+
+      <p class="w3-text-grey">Project Music-Net is an on-line social platform that enables different participants in the music industry to connect and interact between them. The intent of Music-Net is, as other social media networks, to extend the pool of opportunities in the world of music. Music-Net will unleash the power of music to connect with a lot of people, according to Music-America.com , 52% of US households have at least one person 5 years age or older currently playing a musical instrument.</p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">© TALDGWENBRY</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
 </html>
