@@ -19,18 +19,18 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Sign Up</b></h3>
+    <h3 class="w3-padding-64"><b>Browse<br>Events</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="https://bb030.github.io/Band-Net-Repo/Index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="https://bb030.github.io/Band-Net-Repo/LoginPage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a>
+    <a href="https://bb030.github.io/Band-Net-Repo/VenuePage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Venues</a> 
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Sign Up</span>
+  <span>Browse Events</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -39,37 +39,55 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<i>
-     <img src="Music-Net_Logo.png" alt="Trulli" width="300" height="200" style=float:right
-<br> <i>
   <!-- Header -->
-  <div class="w3-container" style="margin-top:20px" id="showcase">
+  <div class="w3-container" style="margin-top:80px" id="showcase">
     <h1 class="w3-jumbo"><b>Band-Net</b></h1>
- 
-    <h1 class="w3-xxxlarge w3-text-red"><b>Sign Up</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Browse Events</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Enter an email and password to create an account on Band-Net!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Password</label>
-        <input class="w3-input w3-border" type="text" name="Password" required>
-      </div>
-      <div class="w3-section">
-        <label>Repeat Password</label>
-        <input class="w3-input w3-border" type="text" name="Repeat Password" required>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Venue Events</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Concert #1 (Crowd Surf)</li>
+        <li class="w3-padding-16">Jacksonville</li>
+        <li class="w3-padding-16">Florida</li>
+        <li class="w3-padding-16">4476 Willis Avenue 32257</li>
+        <li class="w3-padding-16">11/18/22 - 11/20/22</li>
+        <li class="w3-padding-16">Openings: Yes</li>
+        <li class="w3-padding-16">
+          <h2>crowdsurf@gmail.com</h2>
+          <span class="w3-opacity">904-200-4944</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Register</button>
+        </li>
+      </ul>
+    </div>
         
-        <label>
-          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-        </label>
-    
-        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Sign Up</button>
-    </form>  
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Concert #2 (In The Mix)</li>
+        <li class="w3-padding-16">Sacramento</li>
+        <li class="w3-padding-16">California</li>
+        <li class="w3-padding-16">2097 Highland View Drive 95815</li>
+        <li class="w3-padding-16">12/07/22 - 12/09/22</li>
+        <li class="w3-padding-16">Openings: Yes</li>
+        <li class="w3-padding-16">
+          <h2>inthemix@gmail.com</h2>
+          <span class="w3-opacity">530-231-5409</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Register</button>
+        </li>
+      </ul>
+    </div>
   </div>
 
 <!-- End page content -->
