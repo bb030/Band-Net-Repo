@@ -1,63 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-    <title> Profile Setting</title>
-
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-  </head>
-
-  <body>
-    <form action="action_page.php" style="border:1px solid #ccc">
-      <div class="container">
-        <h1>Create Profile</h1>
-        <p>Please fill in this form to create a Band Profile.</p>
-        <hr>
-
-        <label for="first name"><b>First Name</b></label>
-        <input type="text" placeholder="Enter First Name" name="first name" required>
-
-        <label for="last name"><b>Last Name</b></label>
-        <input type="text" placeholder="Enter Last Name" name="last name" required>
-
-        <label for="band name"><b>Band Name</b></label>
-        <input type="text" placeholder="Enter Band Name" name="band name" required>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
-
-        <label for="city"><b>City</b></label>
-        <input type="text" placeholder="Enter City" name="city" required>
-
-        <label for="state"><b>State</b></label>
-        <input type="text" placeholder="Enter State" name="state" required>
-
-        <label for="country"><b>Country</b></label>
-        <input type="text" placeholder="Enter Country" name="country" required>
-
-        <label>
-
-        <p>By creating a Profile you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-        <div class="clearfix">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <button type="submit" class="Profilebtn">Create Profile</button>
-        </div>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+    </style>
+    </head>
+    <body>
+    
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+      <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Band Profile</b></h3>
       </div>
-    </form> <br>
-  <h2>Pages</h2>
-  <a href="https://bb030.github.io/Band-Net-Repo/Index.html">HomePage</a> <br>
-  <a href="https://bb030.github.io/Band-Net-Repo/BandPage.html">Create Profile</a> <br>
-    This is the current date and time:
-    <py-script>
-      from datetime import datetime
-      now = datetime.now()
-      now.strftime("%m/%d/%Y, %H:%M:%S")
-    </py-script>
-  </body>
-</html>
+      <div class="w3-bar-block">
+        <a href="https://bb030.github.io/Band-Net-Repo/Index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+        <a href="https://bb030.github.io/Band-Net-Repo/BandPage.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Bands</a>
+      </div>
+    </nav>
+    
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+      <span>Band Profile</span>
+    </header>
+    
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:340px;margin-right:40px">
+    
+    <i>
+         <img src="Music-Net_Logo.png" alt="Trulli" width="300" height="200" style=float:right
+    <br> <i>
+      <!-- Header -->
+      <div class="w3-container" style="margin-top:20px" id="showcase">
+        <h1 class="w3-jumbo"><b>Music-Net</b></h1>
+     
+        <h1 class="w3-xxxlarge w3-text-red"><b>Create Band Profile</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <p>Enter the following to create a profile for your Band!</p>
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-section">
+            <label>Band Name</label>
+            <input class="w3-input w3-border" type="text" name="Band Name" required>
+          </div>
+          <div class="w3-section">
+            <label>State</label>
+            <input class="w3-input w3-border" type="text" name="State" required>
+          </div>
+          <div class="w3-section">
+            <label>City</label>
+            <input class="w3-input w3-border" type="text" name="City" required>
+          </div>
+          <div class="w3-section">
+            <label>Band Introduction</label>
+            <input class="w3-input w3-border" type="text" name="Band Introduction" style="height:200px"></textarea>
+          </div>
+          <div class="w3-section">
+            <label>Band Picture</label>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit">
+            </form>
+          </div>
+          <div class="w3-section">
+            <label>Band Tag</label>
+            <input class="w3-input w3-border" type="text" name="Venue Tag" required>
+          </div>
+          <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Create</button>
+        </form>  
+      </div>
+    
+    <!-- End page content -->
+    </div>
+    
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+    
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+    
+    </body>
+    </html>
+    
